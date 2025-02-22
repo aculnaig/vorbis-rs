@@ -4,6 +4,7 @@ fn main() {
     // Tell cargo to tell rustc to link the system's vorbis
     // shared library.
     println!("cargo:rustc-link-lib=vorbis");
+    println!("cargo:rustc-link-lib=vorbisfile");
     println!("cargo:rustc-link-lib=vorbisenc");
 
     // The binding::Builder is the main entry point

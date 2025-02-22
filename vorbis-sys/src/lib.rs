@@ -29,7 +29,7 @@ mod tests {
         }
 
         unsafe {
-            match vorbis_encode_init(&mut info, 44100, 2, 124_000, 62_000, 8_000) {
+            match vorbis_encode_init(&mut info, 2, 44_100, 124_000, 62_000, 8_000) {
                 0 => println!("vorbis_encode_init success"),
                 _ => println!("vorbis_encode_init failed"),
             }
