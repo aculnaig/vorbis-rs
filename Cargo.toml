@@ -1,0 +1,19 @@
+[package]
+name = "vorbis-rs"
+version = "0.1.0"
+authors = ["Gianluca Cannata <gcannata23@gmail.com>"]
+edition = "2021"
+license = "MIT"
+description = "An experimental Vorbis decoder/encoder written in Rust"
+repository = "https://github.com/aculnaig/vorbis-rs"
+readme = "README.md"
+keywords = ["vorbis", "libvorbis", "lewton"]
+
+[workspace]
+resolver = "2"
+members = ["vorbis", "vorbis-sys", "vorbis-lewton"]
+
+[workspace.dependencies]
+av-bitstream = { workspace = true, version = "0.2.1" }
+av-codec = { workspace = true, version = "0.3.1" }
+av-data = { workspace = true, version = "0.4.4" }
